@@ -31,11 +31,11 @@ export class AppComponent implements OnInit {
           'blockQuote',
           'insertTable',
           'mediaEmbed',
-          'undo',
-          'redo',
           'mathType',
           'subScript',
-		  'superScript'
+          'superScript',
+          'undo',
+          'redo',
         ],
       },
       language: 'en',
@@ -48,9 +48,9 @@ export class AppComponent implements OnInit {
       licenseKey: '',
     })
       .then((editor) => {
-		// window.editor = editor;
-      console.log(editor);
-    })  
+        // window.editor = editor;
+        console.log(editor);
+      })
       .catch((error) => {
         console.error('Oops, something went wrong!');
         console.error(
